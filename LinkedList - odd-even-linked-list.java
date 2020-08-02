@@ -63,7 +63,7 @@ class Solution {
         ListNode prev=head, tail=head, end=head;
         while(tail.next!=null) tail = tail.next;  // setting tail and end
         end = tail;
-        while(prev != end && prev != end.next){      // 1-->2-->3-->4-->5-->NULL
+        while(prev != end && prev != end.next){    // stopping conditions for odd & even cases respectively // 1-->2-->3-->4-->5-->NULL
             tail.next = new ListNode(prev.next.val);
             tail = tail.next;
             prev.next = prev.next.next;
