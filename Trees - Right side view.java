@@ -45,7 +45,7 @@ class Solution {
             int size = q.size();
             for(int i=0; i<size; i++){
                 temp = q.poll();
-                if(i == size-1) ans.add(temp.val);
+                if(i == size-1) ans.add(temp.val);          // checking the last element in the level
                 if(temp.left != null) q.add(temp.left);
                 if(temp.right != null) q.add(temp.right);
             }
